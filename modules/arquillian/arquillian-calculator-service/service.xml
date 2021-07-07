@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.3.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_3_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.demokit.arquillian.calculator">
+	<namespace>MATH_CALCULATOR</namespace>
+	<entity local-service="true" name="Calculator" remote-service="false" uuid="true" cache-enabled="false" persistence="false">
+		<column name="calculatorId" primary="true" type="long" />
+	</entity>
+    <exceptions>
+        <exception>DivideByZero</exception>
+    </exceptions>
+</service-builder>

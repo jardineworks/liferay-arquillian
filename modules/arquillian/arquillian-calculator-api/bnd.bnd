@@ -1,0 +1,9 @@
+Bundle-Name: arquillian-calculator-api
+Bundle-SymbolicName: com.demokit.arquillian.calculator.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.demokit.arquillian.calculator.exception,\
+	com.demokit.arquillian.calculator.model,\
+	com.demokit.arquillian.calculator.service
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../arquillian-calculator-service/service.xml
